@@ -389,7 +389,7 @@ int main(int argc, char** argv) {
         model = new Model(argv[1]);
     }
     else {
-        model = new Model("obj/african_head.obj");
+        model = new Model("african_head.obj");
     }
 
     std::cout << model->nfaces() << "  " << model->nverts() << std::endl;
@@ -403,7 +403,7 @@ int main(int argc, char** argv) {
     rst::rasterizer r(width, height);
 
     //给定纹理并设置
-    Texture tex("obj/african_head_diffuse.tga");
+    Texture tex("african_head_diffuse.tga");
     r.set_texture(tex);
 
     //清空帧缓冲和zBuffer
